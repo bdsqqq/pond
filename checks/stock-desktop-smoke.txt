@@ -1,0 +1,46 @@
+18:31:53.934 › [pond] main starting { version: '44.4.0', platform: 'darwin' }
+18:31:54.267 › [pond library-ops] created new pond at <smoke-sandbox>/home/Pond/My Pond.pond
+18:31:54.267 › [pond] paths {
+  appData: '<smoke-sandbox>/app-data',
+  cache: '<smoke-sandbox>/app-data/pond-cache',
+  globalDb: '<smoke-sandbox>/app-data/global.db',
+  indexDb: '<smoke-sandbox>/app-data/indexes/f7f2c12bd6459aff6a7be87c3a2e0323.db',
+  indexesDir: '<smoke-sandbox>/app-data/indexes',
+  thumbnailCache: '<smoke-sandbox>/app-data/pond-cache/thumbs/f7f2c12bd6459aff6a7be87c3a2e0323',
+  config: '<smoke-sandbox>/app-data/config.json',
+  libraryId: 'f7f2c12bd6459aff6a7be87c3a2e0323',
+  libraryRoot: '<smoke-sandbox>/home/Pond/My Pond.pond',
+  savesDir: '<smoke-sandbox>/home/Pond/My Pond.pond/items',
+  trashDir: '<smoke-sandbox>/home/Pond/My Pond.pond/trash',
+  libraryMetadata: '<smoke-sandbox>/home/Pond/My Pond.pond/metadata.json',
+  settingsFile: '<smoke-sandbox>/home/Pond/My Pond.pond/settings.json',
+  tagsFile: '<smoke-sandbox>/home/Pond/My Pond.pond/tags.json',
+  backupDir: '<smoke-sandbox>/home/Pond/My Pond.pond/backup'
+}
+18:31:54.270 › [pond db] opening global <smoke-sandbox>/app-data/global.db
+18:31:54.703 › [pond] safeStorage encryption unavailable, persisting secret in plaintext
+18:31:54.704 › [pond db] opening pond index <smoke-sandbox>/app-data/indexes/f7f2c12bd6459aff6a7be87c3a2e0323.db
+18:31:54.734 › [pond library-ops] repaired library_root metadata drift {
+  pointer: '<smoke-sandbox>/home/Pond/My Pond.pond',
+  stored: null
+}
+18:31:54.738 › [pond native] listening <smoke-sandbox>/native.sock
+18:31:54.739 › [pond tray] loaded icon {
+  path: '<checkout>/apps/desktop/resources/trayTemplate.png'
+}
+18:31:54.751 › [pond tray] created
+18:31:54.801 › [pond renderer] 'ArrowLeft' is already registered. Multiple handlers will be triggered. Use conflictBehavior: 'replace' to replace the existing handler, or conflictBehavior: 'allow' to suppress this warning.
+18:31:54.801 › [pond renderer] 'ArrowRight' is already registered. Multiple handlers will be triggered. Use conflictBehavior: 'replace' to replace the existing handler, or conflictBehavior: 'allow' to suppress this warning.
+18:31:54.865 › [pond ipc] saves.listPage { rows: 0, total: 0, ms: 1 }
+18:31:54.868 › [pond ipc] saves.listPage { rows: 0, total: 0, ms: 0 }
+18:31:54.870 › [pond startup] ms since process start {
+  'modules-loaded': 307,
+  'app-ready': 376,
+  'window-created': 752,
+  'window-shown': 1053,
+  'renderer-ready': 1243
+}
+18:31:54.871 › [pond pipeline:reconciler] starting
+18:31:54.873 › [pond scan] updated=0 total=0
+sandbox_extension_issue_file failed for <checkout>/node_modules/.pnpm/electron@44.4.0_supports-color@8.1.1/node_modules/electron/dist/Pond.app/Contents/Frameworks/Electron Helper.app/Contents/Resources: 1 (Operation not permitted)
+SMOKE_PASSED {"render":"My Pond\nAll\n1\nUncategorized\n1\nAssistant\nUntagged\n1\nRecently Added\n1\nRecently Used\n0\nTags\n0\nRandom\nTrash\n0\nHarvesting\nSources\n0\nDownloads\n0\nSmart Folders\nFolders","saves":0,"tags":0}

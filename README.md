@@ -35,3 +35,9 @@ The fixture source and executed orchestration scripts are retained under `harnes
 A normal fixed packaged capture still showed the startup cover despite the DOM readiness assertion. That image is excluded from visual proof; the two targeted permission-failure captures above show the app. Signed builds, notarization, Gatekeeper, DMG installation, Windows, and Intel macOS were not exercised.
 
 Text artifact paths and the test hostname are redacted. Screenshot bytes and source/artifact hashes are unchanged. Full local build output, earlier failed harness attempts, and unsigned packages remain with the original validation artifacts. Keep this evidence branch while the PR or issue relies on these links; remove local scratch only after the hosted evidence has been checked.
+
+## Documented local checks
+
+The separate Electron-ABI database command passed all 8 tests in 2 files. The unmodified stock desktop smoke emitted `SMOKE_PASSED`, including its image creation and detached preview checks. See [commands and results](checks/results.json), [native database output](checks/native-database.txt), and [stock smoke output](checks/stock-desktop-smoke.txt).
+
+These checks ran on the unchanged application source from `282eb02b374b9750e68c34eb4cf5e40222bfd391`. Current PR head `e6662ccb866827e23ac6d158ecd0f88e9a3b73d0` adds the desktop README description of fallback logging. The original `pnpm check`, production build, and permission-denial runtime evidence still apply to those unchanged application sources.

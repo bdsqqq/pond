@@ -1,0 +1,17 @@
+{
+  "head": "e6662ccb866827e23ac6d158ecd0f88e9a3b73d0",
+  "runtimeSourceCommit": "282eb02b374b9750e68c34eb4cf5e40222bfd391",
+  "headChange": "desktop README only; application sources unchanged",
+  "nativeDatabase": {
+    "command": "ELECTRON_RUN_AS_NODE=1 pnpm --filter @pond/desktop exec electron node_modules/vitest/vitest.mjs run src/main/db.test.ts src/main/core/vec-index.test.ts",
+    "testFilesPassed": 2,
+    "testsPassed": 8,
+    "log": "native-database.txt"
+  },
+  "stockSmoke": {
+    "command": "pnpm --filter @pond/desktop exec electron scripts/smoke-desktop.cjs",
+    "result": "SMOKE_PASSED",
+    "coverage": "visible renderer, real preload queries, image creation, detached preview readiness and close",
+    "log": "stock-desktop-smoke.txt"
+  }
+}
