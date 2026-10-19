@@ -1,0 +1,114 @@
+{
+  "conclusion": "the reproduced permission-denied logs startup failure occurs before the fix and is absent with the fix in built and unsigned packaged macOS arm64 apps",
+  "baseRevision": "69a8c38a0a02f5223171f92738d3d54f126f8ae0",
+  "manifest": "manifest.json",
+  "cases": [
+    {
+      "case": "built-original-normal",
+      "assertionsPassed": true,
+      "expectedStartup": "visible app after boot cover dismissed, real preload queries succeed",
+      "result": "cases/built-original-normal/result.json",
+      "fixture": "cases/built-original-normal/fixture.json",
+      "screenshot": null
+    },
+    {
+      "case": "built-original-denied",
+      "assertionsPassed": true,
+      "expectedStartup": "rejection before window",
+      "result": "cases/built-original-denied/result.json",
+      "fixture": "cases/built-original-denied/fixture.json",
+      "screenshot": null
+    },
+    {
+      "case": "built-fixed-normal",
+      "assertionsPassed": true,
+      "expectedStartup": "visible app after boot cover dismissed, real preload queries succeed",
+      "result": "cases/built-fixed-normal/result.json",
+      "fixture": "cases/built-fixed-normal/fixture.json",
+      "screenshot": null
+    },
+    {
+      "case": "built-fixed-denied",
+      "assertionsPassed": true,
+      "expectedStartup": "visible app after boot cover dismissed, real preload queries succeed",
+      "result": "cases/built-fixed-denied/result.json",
+      "fixture": "cases/built-fixed-denied/fixture.json",
+      "screenshot": null
+    },
+    {
+      "case": "built-fixed-both",
+      "assertionsPassed": true,
+      "expectedStartup": "visible app after boot cover dismissed, real preload queries succeed",
+      "result": "cases/built-fixed-both/result.json",
+      "fixture": "cases/built-fixed-both/fixture.json",
+      "screenshot": null
+    },
+    {
+      "case": "packaged-original-normal",
+      "assertionsPassed": true,
+      "expectedStartup": "visible app after boot cover dismissed, real preload queries succeed",
+      "result": "cases/packaged-original-normal/result.json",
+      "fixture": "cases/packaged-original-normal/fixture.json",
+      "screenshot": "cases/packaged-original-normal/window.png"
+    },
+    {
+      "case": "packaged-original-denied",
+      "assertionsPassed": true,
+      "expectedStartup": "rejection before window",
+      "result": "cases/packaged-original-denied/result.json",
+      "fixture": "cases/packaged-original-denied/fixture.json",
+      "screenshot": null
+    },
+    {
+      "case": "packaged-fixed-normal",
+      "assertionsPassed": true,
+      "expectedStartup": "visible app after boot cover dismissed, real preload queries succeed",
+      "result": "cases/packaged-fixed-normal/result.json",
+      "fixture": "cases/packaged-fixed-normal/fixture.json",
+      "screenshot": null
+    },
+    {
+      "case": "packaged-fixed-denied",
+      "assertionsPassed": true,
+      "expectedStartup": "visible app after boot cover dismissed, real preload queries succeed",
+      "result": "cases/packaged-fixed-denied/result.json",
+      "fixture": "cases/packaged-fixed-denied/fixture.json",
+      "screenshot": "cases/packaged-fixed-denied/window.png"
+    },
+    {
+      "case": "packaged-fixed-both",
+      "assertionsPassed": true,
+      "expectedStartup": "visible app after boot cover dismissed, real preload queries succeed",
+      "result": "cases/packaged-fixed-both/result.json",
+      "fixture": "cases/packaged-fixed-both/fixture.json",
+      "screenshot": "cases/packaged-fixed-both/window.png"
+    }
+  ],
+  "checksReused": [
+    "pnpm check",
+    "pnpm build"
+  ],
+  "proofBoundary": [
+    "identical test-only observer and real filesystem permission fixture inserted after sandbox setup in disposable copies",
+    "actual Electron main, preload, renderer and native database code executed",
+    "synthetic empty libraries and fixture ingest token; personal library not opened",
+    "unsigned .app bundles launched directly; DMG installation, notarization and Gatekeeper not exercised"
+  ],
+  "screenshotsInspected": true,
+  "sourceWorkingTreeUnchangedByValidation": true,
+  "visualInspection": {
+    "accepted": [
+      "built-original-normal",
+      "built-fixed-normal",
+      "built-fixed-denied",
+      "built-fixed-both",
+      "packaged-original-normal",
+      "packaged-fixed-denied",
+      "packaged-fixed-both"
+    ],
+    "inconclusive": {
+      "packaged-fixed-normal": "capture still shows startup cover despite bootDismissed DOM assertion; cause unverified. Not used as visual proof. Both targeted permission-failure captures show usable UI."
+    }
+  },
+  "testedCodeCommit": "282eb02b374b9750e68c34eb4cf5e40222bfd391"
+}

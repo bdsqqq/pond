@@ -1,0 +1,7 @@
+{
+  "mode": "denied",
+  "sandbox": "<sandbox:packaged-original-denied>",
+  "systemLogs": "<sandbox:packaged-original-denied>/home/Library/Logs/Pond",
+  "logsParentMode": "500",
+  "permissionDenialConfirmed": true
+}

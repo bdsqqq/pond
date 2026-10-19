@@ -1,0 +1,7 @@
+{
+  "mode": "normal",
+  "sandbox": "<sandbox:packaged-fixed-normal>",
+  "systemLogs": "<sandbox:packaged-fixed-normal>/home/Library/Logs/Pond",
+  "logsParentMode": "755",
+  "permissionDenialConfirmed": false
+}

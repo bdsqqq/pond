@@ -1,0 +1,45 @@
+sandbox_extension_issue_file_to_process failed for <checkout>/apps/desktop/node_modules/electron/dist/Pond.app: 1 (Operation not permitted)
+17:02:08.220 › [pond] main starting { version: '1.1.1', platform: 'darwin' }
+17:02:08.541 › [pond library-ops] created new pond at <sandbox:built-fixed-both>/home/Pond/My Pond.pond
+17:02:08.541 › [pond] paths {
+  appData: '<sandbox:built-fixed-both>/app-data',
+  cache: '<sandbox:built-fixed-both>/app-data/pond-cache',
+  globalDb: '<sandbox:built-fixed-both>/app-data/global.db',
+  indexDb: '<sandbox:built-fixed-both>/app-data/indexes/88e253bc2a0e9a7d6b5ad000d6c4d586.db',
+  indexesDir: '<sandbox:built-fixed-both>/app-data/indexes',
+  thumbnailCache: '<sandbox:built-fixed-both>/app-data/pond-cache/thumbs/88e253bc2a0e9a7d6b5ad000d6c4d586',
+  config: '<sandbox:built-fixed-both>/app-data/config.json',
+  libraryId: '88e253bc2a0e9a7d6b5ad000d6c4d586',
+  libraryRoot: '<sandbox:built-fixed-both>/home/Pond/My Pond.pond',
+  savesDir: '<sandbox:built-fixed-both>/home/Pond/My Pond.pond/items',
+  trashDir: '<sandbox:built-fixed-both>/home/Pond/My Pond.pond/trash',
+  libraryMetadata: '<sandbox:built-fixed-both>/home/Pond/My Pond.pond/metadata.json',
+  settingsFile: '<sandbox:built-fixed-both>/home/Pond/My Pond.pond/settings.json',
+  tagsFile: '<sandbox:built-fixed-both>/home/Pond/My Pond.pond/tags.json',
+  backupDir: '<sandbox:built-fixed-both>/home/Pond/My Pond.pond/backup'
+}
+17:02:08.544 › [pond db] opening global <sandbox:built-fixed-both>/app-data/global.db
+17:02:08.962 › [pond db] opening pond index <sandbox:built-fixed-both>/app-data/indexes/88e253bc2a0e9a7d6b5ad000d6c4d586.db
+17:02:09.031 › [pond library-ops] repaired library_root metadata drift {
+  pointer: '<sandbox:built-fixed-both>/home/Pond/My Pond.pond',
+  stored: null
+}
+17:02:09.058 › [pond renderer] 'ArrowLeft' is already registered. Multiple handlers will be triggered. Use conflictBehavior: 'replace' to replace the existing handler, or conflictBehavior: 'allow' to suppress this warning.
+17:02:09.061 › [pond renderer] 'ArrowRight' is already registered. Multiple handlers will be triggered. Use conflictBehavior: 'replace' to replace the existing handler, or conflictBehavior: 'allow' to suppress this warning.
+17:02:09.072 › [pond native] listening <sandbox:built-fixed-both>/native.sock
+17:02:09.073 › [pond tray] loaded icon {
+  path: '<validation-root>/fixed/apps/desktop/resources/trayTemplate.png'
+}
+17:02:09.084 › [pond tray] created
+17:02:09.137 › [pond ipc] saves.listPage { rows: 0, total: 0, ms: 0 }
+17:02:09.156 › [pond startup] ms since process start {
+  'modules-loaded': 252,
+  'app-ready': 315,
+  'window-created': 686,
+  'window-shown': 982,
+  'renderer-ready': 1190
+}
+17:02:09.158 › [pond pipeline:reconciler] starting
+17:02:09.160 › [pond scan] updated=0 total=0
+17:02:09.383 › [pond ipc] saves.listPage { rows: 0, total: 0, ms: 1 }
+LOGGING_STARTUP_RESULT {"ok":true,"mode":"both","expectFailure":false,"isPackaged":false,"windows":1,"errors":[],"observed":"visible renderer and successful real preload queries","logFile":null,"fileLogging":false,"state":{"info":{"path":"<sandbox:built-fixed-both>/home/Pond/My Pond.pond","name":"My Pond","icon":null,"mark":null,"accent":null},"rows":0,"text":"My Pond\nAll\n0\nUncategorized\n0\nAssistant\nUntagged\n0\nRecently Added\n0\nRecently Used\n0\nTags\n0\nRandom\nTrash\n0\nHarvesting\nSources\n0\nDownloads\n0\nSmart Folders\nFolders\nAll\n\n\n\n\nSearch your library…\nColor\nVisual Match\nSemantic\nTags\nFolders\nShape\nRating\nType\nFormat\nDimensions\nDuration\nSize\nNote\nURL\nDate Saved","root":true,"bootDismissed":true,"width":1280,"height":800},"bounds":{"x":260,"y":121,"width":1280,"height":800}}

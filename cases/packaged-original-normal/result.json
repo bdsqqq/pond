@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "mode": "normal",
+  "expectFailure": false,
+  "isPackaged": true,
+  "windows": 1,
+  "errors": [],
+  "observed": "visible renderer and successful real preload queries",
+  "logFile": "<sandbox:packaged-original-normal>/home/Library/Logs/Pond/main.log",
+  "fileLogging": "silly",
+  "state": {
+    "info": {
+      "path": "<sandbox:packaged-original-normal>/home/Pond/My Pond.pond",
+      "name": "My Pond",
+      "icon": null,
+      "mark": null,
+      "accent": null
+    },
+    "rows": 0,
+    "text": "My Pond\nAll\n0\nUncategorized\n0\nAssistant\nUntagged\n0\nRecently Added\n0\nRecently Used\n0\nTags\n0\nRandom\nTrash\n0\nHarvesting\nSources\n0\nDownloads\n0\nSmart Folders\nFolders\nAll\n\n\n\n\nSearch your library…\nColor\nVisual Match\nSemantic\nTags\nFolders\nShape\nRating\nType\nFormat\nDimensions\nDuration\nSize\nNote\nURL\nDate Saved",
+    "root": true,
+    "bootDismissed": true,
+    "width": 1280,
+    "height": 800
+  },
+  "bounds": {
+    "x": 260,
+    "y": 121,
+    "width": 1280,
+    "height": 800
+  }
+}

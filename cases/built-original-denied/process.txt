@@ -1,0 +1,14 @@
+sandbox_extension_issue_file_to_process failed for <checkout>/apps/desktop/node_modules/electron/dist/Pond.app: 1 (Operation not permitted)
+17:02:01.246 › [pond] main starting { version: '1.1.1', platform: 'darwin' }
+17:02:01.247 › electron-log.transports.file: Can't write to <sandbox:built-original-denied>/home/Library/Logs/Pond/main.log Error: EACCES: permission denied, mkdir '<sandbox:built-original-denied>/home/Library/Logs/Pond'
+    at Object.mkdirSync (node:fs:1410:26)
+    at FileRegistry.testFileWriting (file://<validation-root>/original/apps/desktop/out/main/chunks/vendor-electron-log-CGObt-ah.js:1522:9)
+    at FileRegistry.createFile (file://<validation-root>/original/apps/desktop/out/main/chunks/vendor-electron-log-CGObt-ah.js:1498:9)
+    at FileRegistry.provide (file://<validation-root>/original/apps/desktop/out/main/chunks/vendor-electron-log-CGObt-ah.js:1477:17)
+    at getFile (file://<validation-root>/original/apps/desktop/out/main/chunks/vendor-electron-log-CGObt-ah.js:1633:20)
+    at transport (file://<validation-root>/original/apps/desktop/out/main/chunks/vendor-electron-log-CGObt-ah.js:1589:17)
+    at Logger.processMessage (file://<validation-root>/original/apps/desktop/out/main/chunks/vendor-electron-log-CGObt-ah.js:710:26)
+    at Logger.logData (file://<validation-root>/original/apps/desktop/out/main/chunks/vendor-electron-log-CGObt-ah.js:677:14)
+    at <computed> (file://<validation-root>/original/apps/desktop/out/main/chunks/vendor-electron-log-CGObt-ah.js:636:36)
+    at file://<validation-root>/original/apps/desktop/out/main/index.js:18731:23
+LOGGING_STARTUP_RESULT {"ok":true,"mode":"denied","expectFailure":true,"isPackaged":false,"windows":0,"errors":["Error: EACCES: permission denied, mkdir '<sandbox:built-original-denied>/home/Library/Logs/Pond'\n    at mkdirSync (node:fs:1410:26)\n    at ensureDir (file://<validation-root>/original/apps/desktop/out/main/chunks/paths-BhboAFGr.js:229:22)\n    at resolvePaths (file://<validation-root>/original/apps/desktop/out/main/chunks/paths-BhboAFGr.js:243:15)\n    at createPondBundle (file://<validation-root>/original/apps/desktop/out/main/index.js:739:2)\n    at ensureDefaultLibrary (file://<validation-root>/original/apps/desktop/out/main/index.js:757:17)\n    at openActiveLibrary (file://<validation-root>/original/apps/desktop/out/main/index.js:18552:3)\n    at file://<validation-root>/original/apps/desktop/out/main/index.js:18804:24"],"observed":"permission-denied library startup rejection, zero windows"}

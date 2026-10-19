@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "mode": "denied",
+  "expectFailure": true,
+  "isPackaged": true,
+  "windows": 0,
+  "errors": [
+    "Error: EACCES: permission denied, mkdir '<sandbox:packaged-original-denied>/home/Library/Logs/Pond'\n    at mkdirSync (node:fs:1410:26)\n    at ensureDir (file://<validation-root>/original/apps/desktop/dist/mac-arm64/Pond.app/Contents/Resources/app.asar/out/main/chunks/paths-BhboAFGr.js:229:22)\n    at resolvePaths (file://<validation-root>/original/apps/desktop/dist/mac-arm64/Pond.app/Contents/Resources/app.asar/out/main/chunks/paths-BhboAFGr.js:243:15)\n    at createPondBundle (file://<validation-root>/original/apps/desktop/dist/mac-arm64/Pond.app/Contents/Resources/app.asar/out/main/index.js:739:2)\n    at ensureDefaultLibrary (file://<validation-root>/original/apps/desktop/dist/mac-arm64/Pond.app/Contents/Resources/app.asar/out/main/index.js:757:17)\n    at openActiveLibrary (file://<validation-root>/original/apps/desktop/dist/mac-arm64/Pond.app/Contents/Resources/app.asar/out/main/index.js:18552:3)\n    at file://<validation-root>/original/apps/desktop/dist/mac-arm64/Pond.app/Contents/Resources/app.asar/out/main/index.js:18804:24"
+  ],
+  "observed": "permission-denied library startup rejection, zero windows"
+}

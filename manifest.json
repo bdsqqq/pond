@@ -1,0 +1,38 @@
+{
+  "base": "69a8c38a0a02f5223171f92738d3d54f126f8ae0",
+  "platform": "Darwin <test-host> 27.2.0 Darwin Kernel Version 27.2.0: Wed Oct  7 23:30:06 PDT 2026; root:xnu-13432.41.4~3/RELEASE_ARM64_T6020 arm64",
+  "files": {
+    "apps/desktop/src/main/index.ts": "3d7caa668935b40e7749ea7c3171943bd3f30c6b1571d08dd57704ccdc012aa1",
+    "apps/desktop/src/main/paths.ts": "ba973923b168f6e5cc765ece489e7a7cee575598d7fe080c39b5fce052ef79ab",
+    "apps/desktop/src/main/logging.ts": "707af66e791857825de705a47d2b825adc7b4cda85297f980530ddbf2116ee5f",
+    "apps/desktop/src/main/logging.test.ts": "48e2691228e394dcf968c484ef1039f552139fe8ce8100c169b519eac2e6a041"
+  },
+  "instrumentation": "same observer and permission fixture inserted after sandbox setup in both snapshots",
+  "instrumentation_sha256": "7c0a36af3dfbf3535d1cf9d811dce2d29cb2fdac3280d2f261f9c72b69078511",
+  "instrumentation_verified": "stripping the identical import and one fixture call reproduces each exact original entrypoint",
+  "node_version": "v24.16.0",
+  "electron_version": "44.4.0",
+  "fixtures": "real chmod 0500 on a temporary logs parent; synthetic local ingest token; isolated HOME and POND_SANDBOX",
+  "packaging": {
+    "electron": "44.4.0",
+    "arch": "arm64",
+    "signing": false,
+    "notarization": false,
+    "asar": true,
+    "binaryVerifier": "scripts/verify-binaries.cjs passed",
+    "nativeRebuild": false,
+    "nativeHost": "compiled from each snapshot with scripts/build-native-host.mjs"
+  },
+  "artifact_sha256": {
+    "original": {
+      "main": "01771dce1be976e2aee93de387f2fbc787e7ed206e7c32da43b4d518927cb419",
+      "asar": "bb0392c7d2492afb3895ec33b23474c3c39dd79d967857976932178dcc298d04"
+    },
+    "fixed": {
+      "main": "2af6a1229584df161bd348d6a8d517771435d8c302d9490cb8067a2efa2ee075",
+      "asar": "0965d53842c7f4046f49a7ba86c05194e135a3bbc0b9e3b798710fead60454f7"
+    }
+  },
+  "testedCodeCommit": "282eb02b374b9750e68c34eb4cf5e40222bfd391",
+  "publicationNote": "Text artifact paths and test hostname redacted. Screenshots and source/artifact hashes unchanged."
+}

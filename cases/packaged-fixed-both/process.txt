@@ -1,0 +1,47 @@
+sandbox_extension_issue_file_to_process failed for <validation-root>/fixed/apps/desktop/dist/mac-arm64/Pond.app: 1 (Operation not permitted)
+17:04:02.495 › [pond] main starting { version: '1.1.1', platform: 'darwin' }
+17:04:02.563 › [pond library-ops] created new pond at <sandbox:packaged-fixed-both>/home/Pond/My Pond.pond
+17:04:02.563 › [pond] paths {
+  appData: '<sandbox:packaged-fixed-both>/app-data',
+  cache: '<sandbox:packaged-fixed-both>/app-data/pond-cache',
+  globalDb: '<sandbox:packaged-fixed-both>/app-data/global.db',
+  indexDb: '<sandbox:packaged-fixed-both>/app-data/indexes/7345070d978b614c3fc97c8602bc8dca.db',
+  indexesDir: '<sandbox:packaged-fixed-both>/app-data/indexes',
+  thumbnailCache: '<sandbox:packaged-fixed-both>/app-data/pond-cache/thumbs/7345070d978b614c3fc97c8602bc8dca',
+  config: '<sandbox:packaged-fixed-both>/app-data/config.json',
+  libraryId: '7345070d978b614c3fc97c8602bc8dca',
+  libraryRoot: '<sandbox:packaged-fixed-both>/home/Pond/My Pond.pond',
+  savesDir: '<sandbox:packaged-fixed-both>/home/Pond/My Pond.pond/items',
+  trashDir: '<sandbox:packaged-fixed-both>/home/Pond/My Pond.pond/trash',
+  libraryMetadata: '<sandbox:packaged-fixed-both>/home/Pond/My Pond.pond/metadata.json',
+  settingsFile: '<sandbox:packaged-fixed-both>/home/Pond/My Pond.pond/settings.json',
+  tagsFile: '<sandbox:packaged-fixed-both>/home/Pond/My Pond.pond/tags.json',
+  backupDir: '<sandbox:packaged-fixed-both>/home/Pond/My Pond.pond/backup'
+}
+17:04:02.566 › [pond db] opening global <sandbox:packaged-fixed-both>/app-data/global.db
+17:04:02.962 › [pond db] opening pond index <sandbox:packaged-fixed-both>/app-data/indexes/7345070d978b614c3fc97c8602bc8dca.db
+17:04:02.976 › [pond library-ops] repaired library_root metadata drift {
+  pointer: '<sandbox:packaged-fixed-both>/home/Pond/My Pond.pond',
+  stored: null
+}
+17:04:02.994 › [pond native] listening <sandbox:packaged-fixed-both>/native.sock
+17:04:02.995 › [pond tray] loaded icon {
+  path: '<validation-root>/fixed/apps/desktop/dist/mac-arm64/Pond.app/Contents/Resources/trayTemplate.png'
+}
+17:04:03.005 › [pond tray] created
+[96079:1019/170403.016323:ERROR:electron/shell/common/platform_util_mac.mm:221] Unable to set login item: The operation couldn’t be completed. Operation not permitted
+17:04:03.024 › [pond ipc] saves.listPage { rows: 0, total: 0, ms: 1 }
+17:04:03.066 › [pond renderer] 'ArrowLeft' is already registered. Multiple handlers will be triggered. Use conflictBehavior: 'replace' to replace the existing handler, or conflictBehavior: 'allow' to suppress this warning.
+17:04:03.066 › [pond renderer] 'ArrowRight' is already registered. Multiple handlers will be triggered. Use conflictBehavior: 'replace' to replace the existing handler, or conflictBehavior: 'allow' to suppress this warning.
+17:04:03.081 › [pond startup] ms since process start {
+  'modules-loaded': 348,
+  'app-ready': 416,
+  'window-created': 539,
+  'window-shown': 803,
+  'renderer-ready': 937
+}
+17:04:03.083 › [pond pipeline:reconciler] starting
+17:04:03.086 › [pond scan] updated=0 total=0
+17:04:03.314 › [pond ipc] saves.listPage { rows: 0, total: 0, ms: 1 }
+sandbox_extension_issue_file failed for <validation-root>/fixed/apps/desktop/dist/mac-arm64/Pond.app/Contents/Frameworks/Pond Helper.app/Contents/Resources: 1 (Operation not permitted)
+LOGGING_STARTUP_RESULT {"ok":true,"mode":"both","expectFailure":false,"isPackaged":true,"windows":1,"errors":[],"observed":"visible renderer and successful real preload queries","logFile":null,"fileLogging":false,"state":{"info":{"path":"<sandbox:packaged-fixed-both>/home/Pond/My Pond.pond","name":"My Pond","icon":null,"mark":null,"accent":null},"rows":0,"text":"My Pond\nAll\n0\nUncategorized\n0\nAssistant\nUntagged\n0\nRecently Added\n0\nRecently Used\n0\nTags\n0\nRandom\nTrash\n0\nHarvesting\nSources\n0\nDownloads\n0\nSmart Folders\nFolders\nAll\n\n\n\n\nSearch your library…\nColor\nVisual Match\nSemantic\nTags\nFolders\nShape\nRating\nType\nFormat\nDimensions\nDuration\nSize\nNote\nURL\nDate Saved","root":true,"bootDismissed":true,"width":1280,"height":800},"bounds":{"x":260,"y":121,"width":1280,"height":800}}
